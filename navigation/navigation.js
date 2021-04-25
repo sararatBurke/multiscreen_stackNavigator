@@ -8,7 +8,7 @@ const RootStack = () => {
 
     return (
         <NavigationContainer>
-        <Screen2 />
+        <Screen1 />
         </NavigationContainer>
 
     )
