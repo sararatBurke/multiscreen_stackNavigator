@@ -5,8 +5,6 @@ import {
     ScrollView,
     Image } from 'react-native';
 import {ScaledSheet} from 'react-native-size-matters';
-import { NavigationContainer } from "@react-navigation/native";
-
 
 export default function App() {
 
@@ -23,21 +21,6 @@ export default function App() {
           <View style={styles.headTitle}>
             <Text style={styles.headerText1}>Landscape</Text>
             <Text style={styles.headerText2}>Titles</Text>
-          </View>
-
-          <View style={styles.navBar}>
-                {/* Nav bar */}
-            <ScrollView 
-                horizontal={true}
-                showHorizontalScrollIndicator={false}>
-                    
-                <Text style={styles.navText}>Home</Text>
-                <Text style={styles.navText}>About</Text>
-                <Text style={styles.navText}>Products</Text>
-                <Text style={styles.navText}>Services</Text>
-                <Text style={styles.navText}>Portfolio</Text> 
-                <Text style={styles.navText}>Contact</Text>
-            </ScrollView>
           </View>
         </View>
 
@@ -110,19 +93,6 @@ const styles = ScaledSheet.create({
     fontFamily: 'Georgia',
     fontWeight: 'bold',
     color:'#0C2745',
-  },
-  navBar: {
-    justifyContent: 'flex-start',
-    marginLeft: -290,
-    marginTop:20
-     
-  },
-  navText: {
-    fontFamily: 'Georgia',
-    fontSize: '13@mvs0.3',
-    marginHorizontal: '5@mvs',
-    color: '#2A64A6',
-    paddingTop: 40
   },
 
   pic: {
