@@ -2,9 +2,11 @@ import * as React from 'react';
 import { Button, View, StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import Home from '../stackSreens/home';
 
 function HomeScreen({ navigation }) {
   return (
+    <View style={styles.container}>
     <View style={styles.buttons}>
         <Button 
             title="Home" onPress={() => navigation.navigate('Home')}/>
@@ -17,6 +19,9 @@ function HomeScreen({ navigation }) {
         <Button
           title="Contact"onPress={() => navigation.navigate('Contact')}/>
     </View>
+    <Home />
+    </View>
+    
   );
 }
 function AboutScreen({ navigation }) {
@@ -38,6 +43,7 @@ function AboutScreen({ navigation }) {
 
 function ProductsScreen({ navigation }) {
   return (
+    
     <View style={styles.buttons}>
         <Button 
             title="Home" onPress={() => navigation.navigate('Home')}/>
@@ -94,10 +100,14 @@ function MyStack() {
 }
 
 const styles = StyleSheet.create({
-    buttons: {
+    container:{
         flex: 1, 
+    },
+    buttons: {
+        flex: 0.05, 
         alignItems: 'center',
-        flexDirection: 'row'
+        flexDirection: 'row',
+        marginLeft: 15
     }
 })
 

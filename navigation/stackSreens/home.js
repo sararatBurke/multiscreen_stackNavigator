@@ -71,7 +71,7 @@ const styles = ScaledSheet.create({
   header:{
     flexDirection: 'row',
     // backgroundColor: 'green',
-    marginTop: 50,
+    marginTop: 10,
     
   },
   headTitle:{
