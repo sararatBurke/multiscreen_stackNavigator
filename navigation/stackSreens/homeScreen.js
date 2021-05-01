@@ -3,7 +3,9 @@ import { Button, View, StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Home from '../stackSreens/home';
+import About from '../stackSreens/about';
 import Products from '../stackSreens/products';
+
 
 function HomeScreen({ navigation }) {
   return (
@@ -40,6 +42,7 @@ function AboutScreen({ navigation }) {
                 <Button
                 title="Contact"onPress={() => navigation.navigate('Contact')}/>
             </View>
+            <About />
         </View>
     );
   }
@@ -94,16 +97,48 @@ function ContactScreen({ navigation }) {
   );
 }
 
-const Stack = createStackNavigator();
+const Stack = createStackNavigator(
+    
+);
 
 function MyStack() {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="Home" component={HomeScreen} />
-      <Stack.Screen name="About" component={AboutScreen} />
-      <Stack.Screen name="Products" component={ProductsScreen} />
-      <Stack.Screen name="Portfolio" component={PortfolioScreen} />
-      <Stack.Screen name="Contact" component={ContactScreen} />
+      <Stack.Screen name="Home" component={HomeScreen} 
+        options={{
+            title: 'HOME',
+            headerStyle: {backgroundColor: '#00334d'},
+            headerTitleStyle: {fontWeight: 'bold'},
+            headerTintColor: '#fff'}}
+      />
+      <Stack.Screen name="About" component={AboutScreen}
+        options={{
+            title: 'ABOUT',
+            headerStyle: {backgroundColor: '#00334d'},
+            headerTitleStyle: {fontWeight: 'bold'},
+            headerTintColor: '#fff'}}
+      />
+      <Stack.Screen name="Products" component={ProductsScreen} 
+        options={{
+            title: 'PRODUCTS',
+            headerStyle: {backgroundColor: '#00334d'},
+            headerTitleStyle: {fontWeight: 'bold'},
+            headerTintColor: '#fff'}}
+      />
+      <Stack.Screen name="Portfolio" component={PortfolioScreen}
+        options={{
+            title: 'PORTFOLIO',
+            headerStyle: {backgroundColor: '#00334d'},
+            headerTitleStyle: {fontWeight: 'bold'},
+            headerTintColor: '#fff'}} 
+      />
+      <Stack.Screen name="Contact" component={ContactScreen}
+         options={{
+            title: 'PORTFOLIO',
+            headerStyle: {backgroundColor: '#00334d'},
+            headerTitleStyle: {fontWeight: 'bold'},
+            headerTintColor: '#fff'}}
+      />
     </Stack.Navigator>
   );
 }
@@ -116,7 +151,9 @@ const styles = StyleSheet.create({
         flex: 0.05, 
         alignItems: 'center',
         flexDirection: 'row',
-        marginLeft: 15
+        justifyContent: 'space-around',
+        backgroundColor: '#cce4ff',
+        
     }
 })
 
