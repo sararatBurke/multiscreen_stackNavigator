@@ -87,35 +87,6 @@ import {
     </ImageBackground>
   
     </View> : null}
-    <View style={mode === "portrait" ? styles.nav : styles.nav2}>
-      <LinearGradient colors={['#223DA2', '#4776C6']} style={mode === "portrait"? styles.navBg : styles.navBg2}>
-      
-        <View style={styles.linkcenter}>
-          <ScrollView
-            horizontal={true}
-            showsHorizontalScrollIndicator={false}>
-              <View style={styles.linkcenter2}>
-            <Text style={mode === "portrait" ? styles.links : styles.links2} onPress={() => Linking.openURL('maps://app?saddr=Cupertino&San+Francisco')}>Home</Text>
-            </View>
-            <View style={styles.linkcenter2}>
-            <Text style={mode === "portrait" ? styles.links : styles.links2} onPress={() => setModalVisible(true)}>VideoInModal</Text>
-            </View>
-            <View style={styles.linkcenter2}>
-            <Text style={mode === "portrait" ? styles.links : styles.links2} onPress={() => Linking.openURL('maps://app?saddr=Cupertino&San+Francisco')}>Products</Text>
-            </View>
-            <View style={styles.linkcenter2}>
-            <Text style={mode === "portrait" ? styles.links : styles.links2} onPress={() => Linking.openURL('maps://app?saddr=Cupertino&San+Francisco')}>Services</Text>
-            </View>
-            <View style={styles.linkcenter2}>
-            <Text style={mode === "portrait" ? styles.links : styles.links2} onPress={() => Linking.openURL('maps://app?saddr=Cupertino&San+Francisco')}>Design</Text>
-            </View>
-            <View style={styles.linkcenter2}>
-            <Text style={mode === "portrait" ? styles.links : styles.links2} onPress={() => Linking.openURL('maps://app?saddr=Cupertino&San+Francisco')}>Contact</Text>
-            </View>
-          </ScrollView>
-        </View>
-      </LinearGradient>
-    </View>
 
     <View style={styles.bodyBorder}>
       <ScrollView style={styles.content}> 
@@ -155,30 +126,6 @@ const styles = ScaledSheet.create({
     marginTop: 0,
   },
 
-  navBg:{
-    padding: '15@s',
-    paddingLeft:'25@s',
-    height: 100,
-    borderBottomWidth: '4@s',
-    borderBottomColor: '#fff'
-  
-  },
-  navBg2:{
-    height: 100,
-    borderBottomWidth: '4@s',
-    borderBottomColor: '#fff',
-  
-  },
-  nav: {
-    flex: 0.1,
-    width: "100%",
-      
-  },
-  nav2: {
-    alignItems: "center",
-    flex: 0.2,
-    width: "90%",
-  },
   image: {
     width: "100%",
     height: '100%',
@@ -193,7 +140,7 @@ const styles = ScaledSheet.create({
   bodyBorder:{
     width: '90%',
     alignSelf: 'center',
-    marginTop: '50@mvs',
+    marginTop: '10@mvs',
     marginBottom: '10@s', 
   },
   bodyBg: {

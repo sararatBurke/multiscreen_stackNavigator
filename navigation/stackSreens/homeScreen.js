@@ -3,64 +3,70 @@ import { Button, View, StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Home from '../stackSreens/home';
+import Products from '../stackSreens/products';
 
 function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
-    <View style={styles.buttons}>
-        <Button 
-            title="Home" onPress={() => navigation.navigate('Home')}/>
-        <Button
-            title="About" onPress={() => navigation.navigate('About')}/>
-        <Button
-            title="Products" onPress={() => navigation.navigate('Products')}/>
-        <Button
-            title="Portfolio" onPress={() => navigation.navigate('Portfolio')}/>
-        <Button
-          title="Contact"onPress={() => navigation.navigate('Contact')}/>
-    </View>
-    <Home />
+        <View style={styles.buttons}>
+            <Button 
+                title="Home" onPress={() => navigation.navigate('Home')}/>
+            <Button
+                title="About" onPress={() => navigation.navigate('About')}/>
+            <Button
+                title="Products" onPress={() => navigation.navigate('Products')}/>
+            <Button
+                title="Portfolio" onPress={() => navigation.navigate('Portfolio')}/>
+            <Button
+            title="Contact"onPress={() => navigation.navigate('Contact')}/>
+        </View>
+        <Home />
     </View>
     
   );
 }
 function AboutScreen({ navigation }) {
     return (
-        <View style={styles.buttons}>
-        <Button 
-            title="Home" onPress={() => navigation.navigate('Home')}/>
-        <Button
-            title="About" onPress={() => navigation.navigate('About')}/>
-        <Button
-            title="Products" onPress={() => navigation.navigate('Products')}/>
-        <Button
-            title="Portfolio" onPress={() => navigation.navigate('Portfolio')}/>
-        <Button
-          title="Contact"onPress={() => navigation.navigate('Contact')}/>
-    </View>
+        <View style={styles.container}>
+            <View style={styles.buttons}>
+                <Button 
+                    title="Home" onPress={() => navigation.navigate('Home')}/>
+                <Button
+                    title="About" onPress={() => navigation.navigate('About')}/>
+                <Button
+                    title="Products" onPress={() => navigation.navigate('Products')}/>
+                <Button
+                    title="Portfolio" onPress={() => navigation.navigate('Portfolio')}/>
+                <Button
+                title="Contact"onPress={() => navigation.navigate('Contact')}/>
+            </View>
+        </View>
     );
   }
 
 function ProductsScreen({ navigation }) {
   return (
-    
-    <View style={styles.buttons}>
-        <Button 
-            title="Home" onPress={() => navigation.navigate('Home')}/>
-        <Button
-            title="About" onPress={() => navigation.navigate('About')}/>
-        <Button
-            title="Products" onPress={() => navigation.navigate('Products')}/>
-        <Button
-            title="Portfolio" onPress={() => navigation.navigate('Portfolio')}/>
-        <Button
-          title="Contact"onPress={() => navigation.navigate('Contact')}/>
+    <View style={styles.container}>
+        <View style={styles.buttons}>
+            <Button 
+                title="Home" onPress={() => navigation.navigate('Home')}/>
+            <Button
+                title="About" onPress={() => navigation.navigate('About')}/>
+            <Button
+                title="Products" onPress={() => navigation.navigate('Products')}/>
+            <Button
+                title="Portfolio" onPress={() => navigation.navigate('Portfolio')}/>
+            <Button
+            title="Contact"onPress={() => navigation.navigate('Contact')}/>
+        </View>
+        <Products />
     </View>
   );
 }
 
 function PortfolioScreen({ navigation }) {
     return (
+        <View style={styles.container}>
         <View style={styles.buttons}>
         <Button 
             title="Home" onPress={() => navigation.navigate('Home')}/>
@@ -73,13 +79,16 @@ function PortfolioScreen({ navigation }) {
         <Button
           title="Contact"onPress={() => navigation.navigate('Contact')}/>
     </View>
+    </View>
     );
 }
 
 function ContactScreen({ navigation }) {
   return (
-    <View style={{ flex: 1, alignItems: 'center' }}>
-      <Button title="Portfolio" onPress={() => navigation.goBack()} />
+    <View style={styles.container}>
+        <View style={{ flex: 1, alignItems: 'center' }}>
+            <Button title="Portfolio" onPress={() => navigation.goBack()} />
+        </View>
     </View>
   
   );
