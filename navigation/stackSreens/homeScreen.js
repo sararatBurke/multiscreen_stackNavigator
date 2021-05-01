@@ -5,6 +5,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Home from '../stackSreens/home';
 import About from '../stackSreens/about';
 import Products from '../stackSreens/products';
+import Contact from '../stackSreens/contact';
 
 
 function HomeScreen({ navigation }) {
@@ -101,6 +102,7 @@ function ContactScreen({ navigation }) {
             <Button color="#00334d"
             title="Contact"onPress={() => navigation.navigate('Contact')}/>
         </View>
+        <Contact />
     </View>
   
   );
