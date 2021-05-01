@@ -143,7 +143,7 @@ function MyStack() {
       />
       <Stack.Screen name="Contact" component={ContactScreen}
          options={{
-            title: 'PORTFOLIO',
+            title: 'CONTACT',
             headerStyle: {backgroundColor: '#00334d'},
             headerTitleStyle: {fontWeight: 'bold'},
             headerTintColor: '#fff'}}
