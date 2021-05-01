@@ -6,6 +6,7 @@ import Home from '../stackSreens/home';
 import About from '../stackSreens/about';
 import Products from '../stackSreens/products';
 import Contact from '../stackSreens/contact';
+import Portfolio from '../stackSreens/portfolio';
 
 
 function HomeScreen({ navigation }) {
@@ -83,6 +84,7 @@ function PortfolioScreen({ navigation }) {
             <Button color="#00334d"
             title="Contact"onPress={() => navigation.navigate('Contact')}/>
         </View>
+        <Portfolio />
     </View>
     );
 }
