@@ -11,15 +11,15 @@ function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
         <View style={styles.buttons}>
-            <Button 
+            <Button color="#00334d"
                 title="Home" onPress={() => navigation.navigate('Home')}/>
-            <Button
+            <Button color="#00334d"
                 title="About" onPress={() => navigation.navigate('About')}/>
-            <Button
+            <Button color="#00334d"
                 title="Products" onPress={() => navigation.navigate('Products')}/>
-            <Button
+            <Button color="#00334d"
                 title="Portfolio" onPress={() => navigation.navigate('Portfolio')}/>
-            <Button
+            <Button color="#00334d"
             title="Contact"onPress={() => navigation.navigate('Contact')}/>
         </View>
         <Home />
@@ -31,16 +31,16 @@ function AboutScreen({ navigation }) {
     return (
         <View style={styles.container}>
             <View style={styles.buttons}>
-                <Button 
-                    title="Home" onPress={() => navigation.navigate('Home')}/>
-                <Button
-                    title="About" onPress={() => navigation.navigate('About')}/>
-                <Button
-                    title="Products" onPress={() => navigation.navigate('Products')}/>
-                <Button
-                    title="Portfolio" onPress={() => navigation.navigate('Portfolio')}/>
-                <Button
-                title="Contact"onPress={() => navigation.navigate('Contact')}/>
+            <Button color="#00334d"
+                title="Home" onPress={() => navigation.navigate('Home')}/>
+            <Button color="#00334d"
+                title="About" onPress={() => navigation.navigate('About')}/>
+            <Button color="#00334d"
+                title="Products" onPress={() => navigation.navigate('Products')}/>
+            <Button color="#00334d"
+                title="Portfolio" onPress={() => navigation.navigate('Portfolio')}/>
+            <Button color="#00334d"
+            title="Contact"onPress={() => navigation.navigate('Contact')}/>
             </View>
             <About />
         </View>
@@ -51,15 +51,15 @@ function ProductsScreen({ navigation }) {
   return (
     <View style={styles.container}>
         <View style={styles.buttons}>
-            <Button 
+            <Button color="#00334d"
                 title="Home" onPress={() => navigation.navigate('Home')}/>
-            <Button
+            <Button color="#00334d"
                 title="About" onPress={() => navigation.navigate('About')}/>
-            <Button
+            <Button color="#00334d"
                 title="Products" onPress={() => navigation.navigate('Products')}/>
-            <Button
+            <Button color="#00334d"
                 title="Portfolio" onPress={() => navigation.navigate('Portfolio')}/>
-            <Button
+            <Button color="#00334d"
             title="Contact"onPress={() => navigation.navigate('Contact')}/>
         </View>
         <Products />
@@ -69,19 +69,19 @@ function ProductsScreen({ navigation }) {
 
 function PortfolioScreen({ navigation }) {
     return (
-        <View style={styles.container}>
+    <View style={styles.container}>
         <View style={styles.buttons}>
-        <Button 
-            title="Home" onPress={() => navigation.navigate('Home')}/>
-        <Button
-            title="About" onPress={() => navigation.navigate('About')}/>
-        <Button
-            title="Products" onPress={() => navigation.navigate('Products')}/>
-        <Button
-            title="Portfolio" onPress={() => navigation.navigate('Portfolio')}/>
-        <Button
-          title="Contact"onPress={() => navigation.navigate('Contact')}/>
-    </View>
+            <Button color="#00334d"
+                title="Home" onPress={() => navigation.navigate('Home')}/>
+            <Button color="#00334d"
+                title="About" onPress={() => navigation.navigate('About')}/>
+            <Button color="#00334d"
+                title="Products" onPress={() => navigation.navigate('Products')}/>
+            <Button color="#00334d"
+                title="Portfolio" onPress={() => navigation.navigate('Portfolio')}/>
+            <Button color="#00334d"
+            title="Contact"onPress={() => navigation.navigate('Contact')}/>
+        </View>
     </View>
     );
 }
@@ -89,8 +89,17 @@ function PortfolioScreen({ navigation }) {
 function ContactScreen({ navigation }) {
   return (
     <View style={styles.container}>
-        <View style={{ flex: 1, alignItems: 'center' }}>
-            <Button title="Portfolio" onPress={() => navigation.goBack()} />
+        <View style={styles.buttons}>
+            <Button color="#00334d"
+                title="Home" onPress={() => navigation.navigate('Home')}/>
+            <Button color="#00334d"
+                title="About" onPress={() => navigation.navigate('About')}/>
+            <Button color="#00334d"
+                title="Products" onPress={() => navigation.navigate('Products')}/>
+            <Button color="#00334d"
+                title="Portfolio" onPress={() => navigation.navigate('Portfolio')}/>
+            <Button color="#00334d"
+            title="Contact"onPress={() => navigation.navigate('Contact')}/>
         </View>
     </View>
   
@@ -154,7 +163,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-around',
         backgroundColor: '#cce4ff',
         
-    }
+    },
 })
 
 export default function App() {
