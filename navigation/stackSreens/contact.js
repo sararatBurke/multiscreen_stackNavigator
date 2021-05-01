@@ -48,7 +48,9 @@ return(
                     placeholder=" EMAIL"
                     keyboardType="numeric"
                 />
-                <Button title="Submit" style={styles.submit}/>
+                <View style={styles.submit}>
+                <Text style={styles.submitText} title="Submit">Submit</Text>
+                </View>
             </SafeAreaView>
         </ImageBackground> 
     </View>
@@ -90,7 +92,17 @@ const styles = ScaledSheet.create({
         borderWidth: 1,
       },
       submit:{
-          width: 100,
-          padding: 20
+        width: 130,
+        marginLeft: '42%',
+        
+        
+      },
+      submitText:{
+        backgroundColor: '#009999',
+        textAlign: 'center',
+        paddingVertical:10,
+        borderRadius: 2,
+
       }
+      
 });
